@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(6, 253, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(108, 201, 255); */
+    background-color: rgb(38, 216, 142);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer{
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 30rem;
+    height: 80%;
+    color: aliceblue;
+    background-color: rgb(29, 37, 73);
+}
+.controls{
+    display: flex;
+    /* background-color: black; */
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.controls img{
+    width: 3rem;
+    height: 3rem;
+
+}
+.keycontrols:active{
+    transform: scale(.9);
+}
+.controls img:nth-child(2){
+    height: 4rem;
+    width: 4rem;
+}
+.circle{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+    background: linear-gradient(to bottom,rgb(250, 179, 47),rgb(255, 115, 0));
+}
+.circle div{
+    border-radius: .5px;
+    height: 1rem;
+    width: 1rem;
+    background-color: aliceblue;
+
+}
+.timer h1{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4rem;
+    margin-top: 0;
+}
+#ms{
+    color: rgb(255, 94, 0);
+    
+}
+.wrapper2{
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+@media only screen and (max-width:450px){
+    .timer{
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(29, 37, 73);
+
+    }
+}
